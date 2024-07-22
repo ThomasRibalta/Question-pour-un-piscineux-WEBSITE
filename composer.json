@@ -1,0 +1,18 @@
+{
+  "name": "thomas.rba/question-pour-un-piscineu-website",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Thomas",
+      "email": "thomasribalta@gmail.com"
+    }
+  ],
+  "require": {
+    "league/oauth2-client": "^2.7",
+    "altorouter/altorouter": "^2.0"
+  }
+}
