@@ -1,7 +1,7 @@
 <?php
 
 // Informations de connexion à la base de données
-$servername = "127.0.0.1";
+$servername = "mysql";
 $username = "root";
 $password = "root";
 
