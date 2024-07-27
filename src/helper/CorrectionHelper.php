@@ -12,6 +12,7 @@ class CorrectionHelper
         {
           $responses = [$responses];
         }
+
         foreach ($responses as $r)
         {
           if ($correctResponse[$r]->correcte == 0)
@@ -19,6 +20,14 @@ class CorrectionHelper
             return false;
           }
           $count++;
+        }
+        if ($nReponses == 4)
+        {
+          if ($count >= 1 && $count <= 4)
+          {
+            return true;
+          }
+          return false;
         }
         if ($count == $nReponses)
         {

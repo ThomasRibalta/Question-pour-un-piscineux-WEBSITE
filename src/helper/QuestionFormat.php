@@ -50,6 +50,10 @@ class QuestionFormat
         {
             $this->toRadio();
         }
+        else if (count($this->reponses) === 1)
+        {
+            echo '<input type="text" class="form-control" name="reponse" id="reponse" placeholder="Réponse">';
+        }
     }
 
     public static function sumScore($questions)

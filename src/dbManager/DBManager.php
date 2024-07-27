@@ -12,8 +12,8 @@ class dbManager{
    * @return PDO
    */
   public static function pdoConnexion(): PDO{
-    $user = 'test1';
-    $pass = 'i]6H3KcKFt!vzM4n';
+    $user = 'root';
+    $pass = 'root';
     $dsn = "mysql:host=127.0.0.1;port=3306;dbname=42Quizz;charset=utf8mb4";
     return new PDO($dsn,$user, $pass, [
       PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

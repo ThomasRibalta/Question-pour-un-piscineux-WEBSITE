@@ -7,6 +7,9 @@ use App\Auth;
 
 session_start();
 
+$uid = getenv('UUID_42');
+$secret = getenv('SECRET_42');
+
 $provider = new GenericProvider([
     'clientId'                => $uid,
     'clientSecret'            => $secret,
