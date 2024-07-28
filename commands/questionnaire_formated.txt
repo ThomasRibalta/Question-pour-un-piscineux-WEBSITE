@@ -12,12 +12,12 @@
 1 Gero
 1 Gero
  - Quelles sont les horaires du bocal ?
-0 ???
-0 ???
-0 ???
-0 ???
+0 18h30/23h00
+1 13h30/15h45
+0 9h00/18h00
+0 6h00/12h00
  - Combien y a-t-i de marches dans les escalier de 42 ?
-0 ???
+1 52
  - Qu'y avait-t-il a la place de 42 Perpignan, avant ?
 0 Monoprix
 1 FNAC
@@ -25,8 +25,8 @@
 0 Cultura
  - Quel est le login de celui (ou celle!) qui a dessiné les Pokémons sur le mur en Arena ?
 1 sabelian
- - Combien il y a t'il de pc a 42 perpignan
-0 ???
+ - Combien il y a t'il de pc a 42 perpignan ?
+1 ???
  - Quel est le mot de passe du wifi de 42 ?
 1 SorbetCitron
  - Quel est le nom du tout premier projet du tronc commun de 42 ?

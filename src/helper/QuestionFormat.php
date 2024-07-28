@@ -42,18 +42,19 @@ class QuestionFormat
 
     public function toHtml()
     {
-        if ($this->correct > 1)
+
+        if (count($this->reponses) === 1)
+        {
+            echo '<input type="text" class="form-control" name="reponse" id="reponse" placeholder="Réponse">';
+        }
+        else if ($this->correct > 1)
         {
             $this->toCheckbox();
         }
         else if ($this->correct === 1)
         {
             $this->toRadio();
-        }
-        else if (count($this->reponses) === 1)
-        {
-            echo '<input type="text" class="form-control" name="reponse" id="reponse" placeholder="Réponse">';
-        }
+        } 
     }
 
     public static function sumScore($questions)

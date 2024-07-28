@@ -16,7 +16,7 @@ $provider = new GenericProvider([
     'urlAuthorize'            => 'https://api.intra.42.fr/oauth/authorize',
     'urlAccessToken'          => 'https://api.intra.42.fr/oauth/token',
     'urlResourceOwnerDetails' => 'https://api.intra.42.fr/v2/me',
-    'redirectUri'             => 'http://localhost:8000/'
+    'redirectUri'             => 'https://localhost'
 ]);
 
 if (!isset($_GET['code'])) {

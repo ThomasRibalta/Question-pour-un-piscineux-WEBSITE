@@ -2,7 +2,7 @@
 
 namespace App;
 use AltoRouter;
-use App\Helper\URL;
+use App\Helper\Url;
 
 class Router{
 
@@ -89,7 +89,7 @@ class Router{
     ob_start();
     require $this->path . $view;
     $content = ob_get_clean();
-    require $this->path . '/layouts/default.php';
+    require '/app/view/templates/layouts/default.php';
     return $this;
     }
 
