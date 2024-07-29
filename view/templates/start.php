@@ -5,7 +5,8 @@ use App\Auth;
 
 session_start();
 
-if (!isset($_SESSION['user_details']['id'])) {
+if (!isset($_SESSION['user_details']['id']))
+{
     echo "User not logged in.";
     exit;
 }

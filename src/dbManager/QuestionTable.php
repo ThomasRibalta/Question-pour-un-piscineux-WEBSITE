@@ -6,7 +6,7 @@ class QuestionTable extends Table
 {
     public function getQuestionsSortedByValue()
     {
-        $query = $this->pdo->query('SELECT * FROM questions ORDER BY value ASC');
+        $query = $this->pdo->query('SELECT * FROM questions');
         return $query->fetchAll(\PDO::FETCH_CLASS, "\App\model\Question");
     }
 

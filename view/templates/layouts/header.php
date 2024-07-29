@@ -12,7 +12,7 @@
             font-size: 20px;
         }
         .profile-picture {
-            background-image: url('<?php echo $userDetails->img_url?>');
+            background-image: url('<?= $userDetails ? $userDetails->img_url : "https://t3.ftcdn.net/jpg/08/58/51/04/240_F_858510459_sF3Keim0gs3DKs6lA7beO1abE856CtRT.jpg" ?>');
             background-size: cover;
             background-position: center;
             width: 60px;

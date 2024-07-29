@@ -3,19 +3,30 @@ namespace App\Helper;
 
 class CorrectionHelper
 {
-    public static function correct($responses, $correctResponse, $nReponses)
+    public static function correct($reponses, $correctReponse, $nReponses)
     {
         $count = 0;
-        if (!isset($responses))
-          return ;
-        if (!is_array($responses))
+        if (!isset($reponses))
+          return false;
+        if (!is_array($reponses))
         {
-          $responses = [$responses];
+          $reponses = [$reponses];
         }
-
-        foreach ($responses as $r)
+        if (count($correctReponse) == 1 && $nReponses == 1)
         {
-          if ($correctResponse[$r]->correcte == 0)
+          if (strtolower($correctReponse[0]->reponse) == strtolower($reponses[0]))
+          {
+            return true;
+          }
+          return false;
+        }
+        if ($nReponses == count($correctReponse))
+        {
+          return true;
+        }
+        foreach ($reponses as $r)
+        {
+          if ($correctReponse[$r]->correcte == 0)
           {
             return false;
           }

@@ -1,11 +1,11 @@
 <?php 
 
-// 42 min
-// -2 min mauvais reponse
-// add text input
+// revoir le systeme de correction
+// faire le classement
 
 require '../vendor/autoload.php';
 use App\Auth;
+use App\Helper\Classement;
 use App\dbManager\DBManager;
 
 session_start();
@@ -13,6 +13,12 @@ session_start();
 $pdo = DBManager::pdoConnexion();
 $auth = new Auth($pdo);
 $userDetails = $auth->getUser();
+
+$classement = new Classement($pdo);
+$laHeap = $classement->getLaHeap();
+$laStack = $classement->getLaStack();
+$laHeapScore = $classement->getLaHeapScore();
+$laStackScore = $classement->getLaStackScore();
 
 ?>
 
@@ -40,7 +46,7 @@ $userDetails = $auth->getUser();
             <div class="col-md-6 team-orange">
                 <div class="team-header">
                     <h2>Heap</h2>
-                    <p>Points: 100</p>
+                    <p>Points: <?= $laHeapScore?></p>
                 </div>
                 <table class="table table-light table-striped">
                     <thead class="table-dark">
@@ -50,18 +56,12 @@ $userDetails = $auth->getUser();
                         </tr>
                     </thead>
                     <tbody>
+                    <?php foreach ($laHeap as $user): ?>
                         <tr>
-                            <td>Joueur 1</td>
-                            <td>30</td>
+                            <td><?= $user->pseudo ?></td>
+                            <td><?= $user->score ?></td>
                         </tr>
-                        <tr>
-                            <td>Joueur 2</td>
-                            <td>20</td>
-                        </tr>
-                        <tr>
-                            <td>Joueur 3</td>
-                            <td>50</td>
-                        </tr>
+                    <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
@@ -69,7 +69,7 @@ $userDetails = $auth->getUser();
             <div class="col-md-6 team-yellow">
                 <div class="team-header">
                     <h2>Stack</h2>
-                    <p>Points: 120</p>
+                    <p>Points: <?= $laStackScore?></p>
                 </div>
                 <table class="table table-light table-striped">
                     <thead class="table-dark">
@@ -79,18 +79,12 @@ $userDetails = $auth->getUser();
                         </tr>
                     </thead>
                     <tbody>
+                    <?php foreach ($laStack as $user): ?>
                         <tr>
-                            <td>Joueur A</td>
-                            <td>40</td>
+                            <td><?= $user->pseudo ?></td>
+                            <td><?= $user->score == -1 ? 0 : $user->score ?></td>
                         </tr>
-                        <tr>
-                            <td>Joueur B</td>
-                            <td>30</td>
-                        </tr>
-                        <tr>
-                            <td>Joueur C</td>
-                            <td>50</td>
-                        </tr>
+                    <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>
