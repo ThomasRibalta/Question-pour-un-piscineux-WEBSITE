@@ -24,12 +24,7 @@ else if ((int)$params["id"] != $_SESSION['question'] + 1 || ($userDetails->score
 {
   header('Location: /start');
   exit;
-}
-else if ($_SESSION['timer'] <= time())
-{
-    header('Location: /classement');
-    exit;
-}
+} 
 else if ((int)$params["id"] > $question->getCountQuestions())
 {
     header('Location: /classement');
@@ -37,7 +32,7 @@ else if ((int)$params["id"] > $question->getCountQuestions())
 }
 else if (!isset($_SESSION['user_details']['id']))
 {
-    echo "User not logged in.";
+    header('Location: /');
     exit;
 }
 
@@ -58,7 +53,15 @@ if (isset($_POST['reponse']) && CorrectionHelper::correct($_POST['reponse'], $re
 else
 {
     if ((int)$params["id"] != 1)
+    {
       $_SESSION['timer'] = $_SESSION['timer'] - 120;
+      $erreur = "Réponse incorrecte, ne lache pas l'affaire ! (-2 minutes)";
+      if ($_SESSION['timer'] <= time())
+      {
+            header('Location: /classement');
+            exit;
+      }
+    }
 }
 
 $reponses = $question->getResponseById($questions[((int)$params["id"]) - 1]->id);
@@ -79,15 +82,26 @@ $MaxScore = QuestionFormat::sumScore($questions);
         }
 </style>
 
+<?php if (isset($erreur)): ?>
+    <div class="alert alert-danger" role="alert">
+        <?= $erreur ?>
+    </div>
+<?php elseif (!isset($erreur) && (int) $params["id"] != 1): ?>
+    <div class="alert alert-success" role="alert">
+        Réponse correcte, tu as vraiment était bon !
+    </div>
+<?php endif ?>
+
 <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-             <div class="display-time"></div>
-            <span class="navbar-brand mb-0 h1">Question pour un piscineu </span>
-            <div class="ml-auto score-box">
-                <?php echo $userDetails->score?>/<?php echo $MaxScore; ?>
-            </div>
+    <div class="container-fluid d-flex justify-content-between">
+        <span class="display-time"></span>
+        <span class="navbar-brand mb-0 h1 mx-auto">Question pour un piscineux</span>
+        <div class="score-box">
+            <?php echo $userDetails->score?>/<?php echo $MaxScore; ?>
         </div>
+    </div>
 </nav>
+
 <div class="container mt-5">
         <h1 class="text-center">Question n°<?php echo $params["id"]?></h1>
         <div class="row mt-5">
