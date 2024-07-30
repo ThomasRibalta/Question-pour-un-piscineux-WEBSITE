@@ -4,24 +4,24 @@ namespace App\Helper;
 
 class QuestionFormat
 {
-    public $reponses;
+    public $responses;
 
     public $correct;
 
-    public function __construct($reponses, $correct)
+    public function __construct($responses, $correct)
     {
-        $this->reponses = $reponses;
+        $this->responses = $responses;
         $this->correct = $correct;
     }
 
     public function toRadio()
     {
-      for ($i = 0; $i < count($this->reponses); $i++)
+      for ($i = 0; $i < count($this->responses); $i++)
       {
         echo '<div class="form-check">';
         echo '<input class="form-check-input" type="radio" name="reponse" id="reponse' . $i . '" value="'. $i .'">';
         echo '<label class="form-check-label" for="reponse' . $i . '">';
-        echo $this->reponses[$i]->reponse;
+        echo $this->responses[$i]->reponse;
         echo '</label>';
         echo '</div>';
       }
@@ -29,12 +29,12 @@ class QuestionFormat
 
     public function toCheckbox()
     {
-      for ($i = 0; $i < count($this->reponses); $i++)
+      for ($i = 0; $i < count($this->responses); $i++)
       {
         echo '<div class="form-check">';
         echo '<input class="form-check-input" type="checkbox" name="reponse[]" id="reponse' . $i . '" value="'. $i .'">';
         echo '<label class="form-check-label" for="reponse' . $i . '">';
-        echo $this->reponses[$i]->reponse;
+        echo $this->responses[$i]->reponse;
         echo '</label>';
         echo '</div>';
       }
@@ -43,7 +43,7 @@ class QuestionFormat
     public function toHtml()
     {
 
-        if (count($this->reponses) === 1)
+        if (count($this->responses) === 1)
         {
             echo '<input type="text" class="form-control" name="reponse" id="reponse" placeholder="Réponse">';
         }

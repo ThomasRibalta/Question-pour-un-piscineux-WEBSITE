@@ -41,11 +41,11 @@ $_SESSION['question'] = (int)$params["id"];
 $questions = $question->getQuestionsSortedByValue();
 if ((int) $params["id"] != 1)
 {
-  $reponses = $question->getResponseById($questions[((int)$params["id"]) - 2]->id);
+  $responses = $question->getResponseById($questions[((int)$params["id"]) - 2]->id);
   $nCorrect = $question->getCountCorrectResponse($questions[((int)$params["id"]) - 2]->id);
 }
 
-if (isset($_POST['reponse']) && CorrectionHelper::correct($_POST['reponse'], $reponses, $nCorrect) == TRUE)
+if (isset($_POST['reponse']) && CorrectionHelper::correct($_POST['reponse'], $responses, $nCorrect) == TRUE)
 {
     $auth->updateScore($auth->getUser()->id, $questions[((int)$params["id"]) - 1]->value);
     $userDetails->score += $questions[((int)$params["id"]) - 1]->value;
@@ -55,7 +55,7 @@ else
     if ((int)$params["id"] != 1)
     {
       $_SESSION['timer'] = $_SESSION['timer'] - 120;
-      $erreur = "Réponse incorrecte, ne lache pas l'affaire ! (-2 minutes)";
+      $error = "Réponse incorrecte, ne lache pas l'affaire ! (-2 minutes)";
       if ($_SESSION['timer'] <= time())
       {
             header('Location: /classement');
@@ -64,10 +64,10 @@ else
     }
 }
 
-$reponses = $question->getResponseById($questions[((int)$params["id"]) - 1]->id);
+$responses = $question->getResponseById($questions[((int)$params["id"]) - 1]->id);
 $nCorrect = $question->getCountCorrectResponse($questions[((int)$params["id"]) - 1]->id);
 
-$formatQuestion = new QuestionFormat($reponses, $nCorrect);
+$formatQuestion = new QuestionFormat($responses, $nCorrect);
 
 $MaxScore = QuestionFormat::sumScore($questions);
 
@@ -82,11 +82,11 @@ $MaxScore = QuestionFormat::sumScore($questions);
         }
 </style>
 
-<?php if (isset($erreur)): ?>
+<?php if (isset($error)): ?>
     <div class="alert alert-danger" role="alert">
-        <?= $erreur ?>
+        <?= $error ?>
     </div>
-<?php elseif (!isset($erreur) && (int) $params["id"] != 1): ?>
+<?php elseif (!isset($error) && (int) $params["id"] != 1): ?>
     <div class="alert alert-success" role="alert">
         Réponse correcte, tu as vraiment était bon !
     </div>

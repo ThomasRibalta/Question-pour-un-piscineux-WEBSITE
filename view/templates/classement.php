@@ -1,8 +1,5 @@
 <?php 
 
-// revoir le systeme de correction
-// faire le classement
-
 require '../vendor/autoload.php';
 use App\Auth;
 use App\Helper\Classement;
