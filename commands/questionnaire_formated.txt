@@ -1,0 +1,179 @@
+ - Lors du dernier exam machine, l'utilisation de VSCode est interdite :
+0 VRAI
+1 FAUX
+ - Le monument célèbre de Perpignan s'appelle :
+0 Le Catelet
+1 Le Castillet
+0 Le Châtelet
+0 La Chantilly
+ - Qui est le menbre du bocal le plus sympa :
+1 Gero
+1 Gero
+1 Gero
+1 Gero
+ - Quelles sont les horaires du bocal ?
+0 18h30/23h00
+1 13h30/15h45
+0 9h00/18h00
+0 6h00/12h00
+ - Combien y a-t-i de marches dans les escalier de 42 ?
+1 52
+ - Qu'y avait-t-il a la place de 42 Perpignan, avant ?
+0 Monoprix
+1 FNAC
+0 Darty
+0 Cultura
+ - Quel est le login de celui (ou celle!) qui a dessiné les Pokémons sur le mur en Arena ?
+1 sabelian
+ - Combien il y a t'il de pc a 42 perpignan ?
+1 156
+ - Quel est le mot de passe du wifi de 42 ?
+1 SorbetCitron
+ - Quel est le nom du tout premier projet du tronc commun de 42 ?
+1 libft
+ - Combien de projets compose le tronc commun (les modules de C++ comptent pour 2 projets) ?
+1 21
+ - Quel est le projet qui consiste à recréer un interpréteur de commandes Unix en C ?
+0 UnixShell
+0 ShellV2
+0 ft_unix
+1 Minishell
+ - Quel projet ne fait pas parti du cursus 42:
+1 Minitel
+0 Minitalk
+0 Minishell
+0 MiniRt
+ - Quelle est la taille maximale d'une équipe de projet à 42 ?
+1 5
+0 4
+0 3
+0 2
+ - Pourquoi n'y a t-il plus de machine a café à 42 ?
+1 A cause de la presence de vers dans la machine
+0 A cause d'une invasion de cafard
+0 A cause d'une greve chez Nescafe
+0 Parce que Gero n'aime pas le cafe
+ - Qui a offert le Bar à Eau ?
+0 Le Pere Noel
+0 Le pere fouettard
+0 La mere Noel
+1 Veolia
+ - Quels sont les 4 coalitions de 42 ?
+0 Les quatre saisons (Printemps, Été, Automne, Hiver)
+1 Les quatre éléments (Terre, Air, Feu, Eau)
+0 Les quatre Fantastiques (Mr. Fantastic, Invisible Woman, la Torche, la Chose)
+0 Les quatre points cardinaux (Nord, Sud, Est, Ouest)
+ - Combien de campus 42 y a-t-il dans le monde ?
+0 42
+0 18
+0 118
+1 54
+ - Quel "titre" de l'intra debloque-t-on quand on atteinds le niveau 25 ?
+0 Knight
+0 Jedi
+0 Boss
+1 Master
+ - Qui sont les tuteurs de cette piscine ?
+1 Lorenzo
+0 Dan
+1 Florian
+1 Dylan
+ - Comment appelle t-on les étudiants de l’école ? (Duoquadra j’sais plus quoi)
+1 Les duoquadrogentiens
+1 Les 42iens
+0 Les piscineux
+0 les quarante-deuzards
+ - Comment s’appelle la boss qui nettoie vos postes ?
+1 Jasmine
+0 Violette
+0 Martine
+0 Justine
+ - Qui est le principal mécène de 42 Perpignan?
+1 Veolia
+ - Nicolas, Xavier, Florian et... ?
+1 Kwame
+ - Comment appelle-t-on le peuple du bocal :
+0 Les bocaleux
+1 Les bocaliens
+0 Les bocaloïdes
+0 Les bocalonautes
+ - le quel de ces campus nexiste pas
+1 42 Seatle
+0 42 perpignan occitanie
+0 1337
+0 codam
+ - La distance entre le centre et la surface de la terre est moins qu'entre 42 Perpignan et
+0 42 Angoulême
+0 42 Hive (en Finlande)
+1 42 Rio de Janeiro (au Brésil)
+0 42 Québec (au Canada)
+ - Dans l'école 42 il y a une licorne, que peut-on lire sur son ventre ?
+0 Rien
+0 La meilleure école du monde
+0 Il y a en fait deux licornes dans 42 mais la seconde est bien cachée (et rose).
+1 Veolia avec un petit cœur rose
+ - Que se passe t'il lors de la randominette si la personne nest pas log ?
+0 Rien
+0 Il est tige par mail
+1 Les personnes autour de lui ce font rm -rf leur home
+1 La rangee entiere est rm -rf
+ - En cas de freeze des postes de l’école, qui convient-il de blâmer ?
+1 Le BDE
+1 Le constructeur
+1 Le fournisseur d’accès internet
+1 42 Paris
+1 Sherpa
+ - Quel est le login intra du deuxième correcteur du minishell de Amy Plant ?
+1 frthierr
+ - Selon la Norme, par quelle lettre de l'alphabet doit précéder le nom d'une structure de type enum ?
+1 e
+ - À qui doit-on l'invention du symbole arobase (@) ?
+0 À Trévor A. Robase, un informaticien spécialisé en cryptologie.
+1 À des moines copistes au sixième siècle après J.C.
+0 Aux services secrets américains, lors de la Seconde Guerre mondiale, qui l'utilisaient dans leurs messages codés.
+0 Il a été inventé par 42 Paris lors de l'invention du premier email.
+ - Une des gargouilles de la cathédrale de Washington est
+0 Une des gargouilles de Notre-Dame de Paris donnée en signe d’amitié entre les deux pays.
+0 Une “pink fluffy unicorn “ qui “dancing on a rainbow”.
+0 Poupou Raikovitch le chien de Gero
+1 Darth Vader.
+ - Quelle est l'origine du code d'erreur HTTP "404", choisi pour représenter une page non trouvée ?
+1 C'etait de numero de salle où les ingénieurs d'Apache ont développé le serveur HTTP
+0 A cause du numero de vol du premier satellite de communication
+0 Cest une référence à une rue célèbre à San Francisco liée à la technologie
+0 Il représente un nombre manquant dans les premiers systèmes de serveur
+ - Laquelle de ces femmes est considérée comme une précurseur de l'informatique moderne
+1 Ada Lovelace
+1 Eddy Lamar
+1 Grace Hopper
+1 Margaret Hamilton
+ - Quel mot-clé n'existe pas en C ?
+0 typedef
+0 volatile
+0 register
+1 catch
+ - Laquelle de ces bibliothèques n'est pas une bibliothèque standard en C ?
+0 time.h
+0 ctype.h
+0 conio.h
+1 iostream.h
+ - Quel est le nom du créateur de Linux ?
+0 Richard Stallman
+1 Linus Torvalds
+0 Steve Jobs
+0 Bill Gates
+ - Quel est le nom du créateur de C ?
+1 Dennis Ritchie
+0 Ken Thompson
+0 Linus Torvalds
+0 Bjarne Stroustrup
+ - Quelle est la signification de "GDB" ?
+0 Graphical Debugger
+0 Great Debugging Book
+1 GNU DeBugger
+0 Global Data Base 
+ - Quelle est la signification de "GCC" ?
+1 GNU Compiler Collection
+0 General Code Compiler 
+0 Great Coding Compiler
+0 Gero's Compiler Consortium
