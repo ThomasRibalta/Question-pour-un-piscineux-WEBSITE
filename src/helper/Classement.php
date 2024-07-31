@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helper;
+namespace App\helper;
 
 use App\dbManager\dbManager;
 use App\model\User;
