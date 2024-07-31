@@ -3,7 +3,7 @@
 namespace App;
 use AltoRouter;
 use App\Helper\Url;
-
+ 
 class Router{
 
   /**
