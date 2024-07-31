@@ -2,7 +2,7 @@
 
 require '../vendor/autoload.php';
 use App\Auth;
-use App\Helper\Classement;
+use App\helper\Classement;
 use App\dbManager\DBManager;
 
 session_start();
