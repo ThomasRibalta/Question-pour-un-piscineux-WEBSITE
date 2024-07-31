@@ -3,8 +3,8 @@ require '../vendor/autoload.php';
 use App\Auth;
 use App\dbManager\QuestionTable;
 use App\dbManager\DBManager;
-use App\Helper\CorrectionHelper;
-use App\Helper\QuestionFormat;
+use App\helper\CorrectionHelper;
+use App\helper\QuestionFormat;
 
 session_start();
 
