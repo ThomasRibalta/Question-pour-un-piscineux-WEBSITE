@@ -14,7 +14,9 @@ class CorrectionHelper
         }
         if (count($correctResponse) == 1 && $nResponses == 1)
         {
-          if (strtolower($correctResponse[0]->reponse) == strtolower($responses[0]))
+          echo $correctResponse[0]->reponse. "\n";
+          echo $responses[0]. "\n";
+          if (strcmp(strtolower($correctResponse[0]->reponse), strtolower($responses[0])) == 0)
           {
             return true;
           }
