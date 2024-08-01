@@ -29,7 +29,6 @@ class CorrectionHelper
           {
             return true;
           }
-          echo "false\n";
           return false;
         }
         if ($nResponses == count($correctResponse))
