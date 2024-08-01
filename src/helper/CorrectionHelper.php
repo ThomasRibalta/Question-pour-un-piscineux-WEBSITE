@@ -16,7 +16,7 @@ class CorrectionHelper
         {
           echo strtolower($correctResponse[0]->reponse). "\n";
           echo strtolower($responses[0]). "\n";
-          var_dump(strcmp(strtolower($correctResponse[0]->reponse), strtolower($responses[0])));
+          var_dump(strcmp(strtolower($correctResponse[0]->reponse), strtolower($responses[0] . "\n")));
           if (strtolower($correctResponse[0]->reponse) == strtolower($responses[0]))
           {
             return true;
