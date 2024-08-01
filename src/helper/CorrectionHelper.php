@@ -14,12 +14,14 @@ class CorrectionHelper
         }
         if (count($correctResponse) == 1 && $nResponses == 1)
         {
-          echo $correctResponse[0]->reponse. "\n";
-          echo $responses[0]. "\n";
-          if (strcmp(strtolower($correctResponse[0]->reponse), strtolower($responses[0])) == 0)
+          echo strtolower($correctResponse[0]->reponse). "\n";
+          echo strtolower($responses[0]). "\n";
+          echo strcmp(strtolower($correctResponse[0]->reponse), strtolower($responses[0])) == 0;
+          if ($correctResponse[0]->reponse == $responses[0])
           {
             return true;
           }
+          echo "false\n";
           return false;
         }
         if ($nResponses == count($correctResponse))
