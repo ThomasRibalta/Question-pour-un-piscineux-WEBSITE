@@ -3,6 +3,19 @@ namespace App\helper;
 
 class CorrectionHelper
 {
+    public static function comp_reponse($reponse, $reponse_correcte)
+    {
+        $reponse = strtolower($reponse);
+        $reponse_correcte = strtolower($reponse_correcte);
+        $reponse = str_replace(' ', '', $reponse);
+        $reponse_correcte = str_replace(' ', '', $reponse_correcte);
+        if ($reponse == $reponse_correcte)
+        {
+            return true;
+        }
+        return false;
+    }
+
     public static function correct($responses, $correctResponse, $nResponses)
     {
         $count = 0;
@@ -16,7 +29,7 @@ class CorrectionHelper
         {
           echo strtolower($correctResponse[0]->reponse). "\n";
           echo strtolower($responses[0]). "\n";
-          var_dump(strcmp(strtolower($correctResponse[0]->reponse), strtolower($responses[0] . "\n")));
+          var_dump(CorrectionHelper::comp_reponse($responses[0], $correctResponse[0]->reponse));
           if (strtolower($correctResponse[0]->reponse) == strtolower($responses[0]))
           {
             return true;
