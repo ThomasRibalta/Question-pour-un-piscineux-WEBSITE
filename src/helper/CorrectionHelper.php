@@ -39,7 +39,7 @@ class CorrectionHelper
         {
           //echo strtolower($correctResponse[0]->reponse). "\n";
           //echo strtolower($responses[0]). "\n";
-          //var_dump(CorrectionHelper::comp_reponse($responses[0], $correctResponse[0]->reponse));
+          var_dump(CorrectionHelper::comp_reponse($responses[0], $correctResponse[0]->reponse));
           if (strtolower($correctResponse[0]->reponse) == strtolower($responses[0]))
           {
             return true;
