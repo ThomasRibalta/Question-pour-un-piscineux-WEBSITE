@@ -78,7 +78,7 @@
 0 Dan
 1 Florian
 1 Dylan
- - Comment appelle t-on les étudiants de l’école ? (Duoquadra j’sais plus quoi)
+ - Comment appelle t-on les étudiants de l’école ?
 1 Les duoquadrogentiens
 1 Les 42iens
 0 Les piscineux
