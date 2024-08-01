@@ -5,8 +5,8 @@ class CorrectionHelper
 {
     public static function comp_reponse($reponse, $reponse_correcte)
     {
-        $reponse = strtolower($reponse);
-        $reponse_correcte = strtolower($reponse_correcte);
+        $reponse = trim(strtolower($reponse), " ");
+        $reponse_correcte = trim(strtolower($reponse_correcte), " ");
         $indice = 0;
         echo "[";
         while ($reponse[$indice])
