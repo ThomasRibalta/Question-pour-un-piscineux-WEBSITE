@@ -7,12 +7,22 @@ class CorrectionHelper
     {
         $reponse = strtolower($reponse);
         $reponse_correcte = strtolower($reponse_correcte);
-        $reponse = str_replace(' ', '', $reponse);
-        $reponse_correcte = str_replace(' ', '', $reponse_correcte);
-        if ($reponse == $reponse_correcte)
+        $indice = 0;
+        echo "[";
+        while ($reponse[$indice])
         {
-            return true;
+           echo $reponse[$indice]. "|";
+           $indice++;
         }
+        echo "]\n";        
+        $indice = 0;
+        echo "[";
+        while ($reponse_correcte[$indice])
+        {
+           echo $reponse_correcte[$indice]. "|";
+            $indice++;
+        }
+        echo "]\n"; 
         return false;
     }
 
@@ -27,9 +37,9 @@ class CorrectionHelper
         }
         if (count($correctResponse) == 1 && $nResponses == 1)
         {
-          echo strtolower($correctResponse[0]->reponse). "\n";
-          echo strtolower($responses[0]). "\n";
-          var_dump(CorrectionHelper::comp_reponse($responses[0], $correctResponse[0]->reponse));
+          //echo strtolower($correctResponse[0]->reponse). "\n";
+          //echo strtolower($responses[0]). "\n";
+          //var_dump(CorrectionHelper::comp_reponse($responses[0], $correctResponse[0]->reponse));
           if (strtolower($correctResponse[0]->reponse) == strtolower($responses[0]))
           {
             return true;
