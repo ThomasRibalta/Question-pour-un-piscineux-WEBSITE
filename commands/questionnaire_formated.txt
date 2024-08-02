@@ -12,8 +12,8 @@
 1 Gero
 1 Gero
  - Quelles sont les horaires du bocal ?
-0 10h00/12h30 à 13h30/16h00
-1 9h00/12h00 à 14h00/17h00
+0 09h00/12h30 à 13h30/16h00
+1 10h00/12h00 à 14h00/17h00
 0 4h00/12h00 à 12h30/23h42
 0 6h00/12h00 à 13h00/19h00
  - Combien y a-t-i de marche dans les escalier de 42 ?

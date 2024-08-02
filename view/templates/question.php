@@ -88,7 +88,7 @@ $MaxScore = QuestionFormat::sumScore($questions);
     </div>
 <?php elseif (!isset($error) && (int) $params["id"] != 1): ?>
     <div class="alert alert-success" role="alert">
-        Réponse correcte, tu as vraiment était bon !
+        Réponse correcte, tu as vraiment été bon !
     </div>
 <?php endif ?>
 

@@ -17,6 +17,10 @@ $userDetails = $auth->getUser();
 
 ?>
 
+<div class="alert alert-info">
+    <strong>Info!</strong> Une fois le questionnaire commencé, vous ne pourrez pas revenir en arrière.
+</div>
+
 <div class="container mt-5">
         <h1 class="text-center">Bonjour <?php echo htmlspecialchars($userDetails->pseudo); ?>, tu peux commencer en cliquant sur le bouton</h1>
         <div class="row mt-5">

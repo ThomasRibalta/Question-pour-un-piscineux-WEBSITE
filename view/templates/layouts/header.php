@@ -35,7 +35,7 @@
         <a class="navbar-brand" href="#">
             <img src="assets/42logo.png" alt="Logo 42">
         </a>
-        <div class="collapse navbar-collapse mr-5">
+        <div class="navbar-collapse mr-5">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="/classement">Classement</a>
