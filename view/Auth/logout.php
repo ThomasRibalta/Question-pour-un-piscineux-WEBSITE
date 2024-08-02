@@ -16,5 +16,6 @@ if (!isset($_SESSION['user_details']['id']))
 }
 
 $auth->updateScore($auth->getUser()->id, -1);
+$_SESSION['question'] = NULL;
 
 header('Location: /');
