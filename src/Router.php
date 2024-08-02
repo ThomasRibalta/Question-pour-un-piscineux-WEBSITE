@@ -89,7 +89,7 @@ class Router{
     ob_start();
     require $this->path . $view;
     $content = ob_get_clean();
-    require '/app/view/templates/layouts/default.php';
+    require '/var/www/html/view/templates/layouts/default.php';
     return $this;
     }
 
