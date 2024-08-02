@@ -48,11 +48,21 @@ class Auth {
     }
     
     public function updateScore($id, $score): void {
-        $query = $this->pdo->prepare('UPDATE users SET score = score + :score WHERE id = :id');
-        $query->execute([
-            'id' => $id,
-            'score' => $score
-        ]);
+        if ($score == -1)
+        {
+            $query = $this->pdo->prepare('UPDATE users SET score = :score WHERE id = :id');
+            $query->execute(['id' => $id,
+                    'score' => $score
+                ]);
+        }
+        else
+        {
+            $query = $this->pdo->prepare('UPDATE users SET score = score + :score WHERE id = :id');
+            $query->execute([
+                'id' => $id,
+                'score' => $score
+            ]);
+        }
     }
 
     public function registerUser($id, $pseudo, $img_url, $coalition, $score): void {

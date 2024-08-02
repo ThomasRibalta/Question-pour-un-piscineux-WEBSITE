@@ -31,7 +31,7 @@
 1 SorbetCitron
  - Quel est le nom du tout premier projet du tronc commun de 42 ?
 1 libft
- - Combien de projets compose le tronc commun (les modules de C++ comptent pour 2 projets) ?
+ - Combien de projets devez vous réaliser pour finir le tronc commun (1 module C++ = 1 projet, de même pour les examens) ?
 1 21
  - Quel est le projet qui consiste à recréer un interpréteur de commandes Unix en C ?
 0 UnixShell
