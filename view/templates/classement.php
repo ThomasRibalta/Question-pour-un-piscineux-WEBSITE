@@ -39,7 +39,6 @@ $laStackScore = $classement->getLaStackScore();
 
 <div class="container-fluid">
         <div class="row">
-            <!-- Team Orange -->
             <div class="col-md-6 team-orange">
                 <div class="team-header">
                     <h2>Heap</h2>
@@ -62,7 +61,6 @@ $laStackScore = $classement->getLaStackScore();
                     </tbody>
                 </table>
             </div>
-            <!-- Team Yellow -->
             <div class="col-md-6 team-yellow">
                 <div class="team-header">
                     <h2>Stack</h2>
@@ -79,7 +77,7 @@ $laStackScore = $classement->getLaStackScore();
                     <?php foreach ($laStack as $user): ?>
                         <tr>
                             <td><?= $user->pseudo ?></td>
-                            <td><?= $user->score == -1 ? 0 : $user->score ?></td>
+                            <td><?= $user->score?></td>
                         </tr>
                     <?php endforeach; ?>
                     </tbody>

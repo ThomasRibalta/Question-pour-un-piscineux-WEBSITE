@@ -46,7 +46,10 @@ class Classement
     $score = 0;
     foreach ($this->laStack as $user)
     {
-      $score += $user->score;
+      if ($user->score == -1)
+        $score += 0;
+      else
+        $score += $user->score;
     }
     return $score;
   }
