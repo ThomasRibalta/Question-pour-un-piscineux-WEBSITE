@@ -43,6 +43,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/classement">Classement</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/start">Classement</a>
+                </li>
             </ul>
         </div>
     </nav>
