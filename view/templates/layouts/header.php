@@ -41,10 +41,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/classement">Classement</a>
+                    <a class="nav-link" href="/start">Start</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/start">Classement</a>
+                    <a class="nav-link" href="/classement">Classement</a>
                 </li>
             </ul>
         </div>

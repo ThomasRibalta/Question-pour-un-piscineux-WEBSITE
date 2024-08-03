@@ -54,7 +54,7 @@ $laStackScore = $classement->getLaStackScore();
                     <tbody>
                     <?php foreach ($laHeap as $user): ?>
                         <tr>
-                            <td><?= $user->pseudo ?></td>
+                            <td><a href="https://profile.intra.42.fr/users/<?php echo $userDetails->pseudo?>"></a><?= $user->pseudo ?></td>
                             <td><?= $user->score ?></td>
                         </tr>
                     <?php endforeach; ?>
@@ -76,7 +76,7 @@ $laStackScore = $classement->getLaStackScore();
                     <tbody>
                     <?php foreach ($laStack as $user): ?>
                         <tr>
-                            <td><?= $user->pseudo ?></td>
+                            <td><a href="https://profile.intra.42.fr/users/<?php echo $userDetails->pseudo?>"><?= $user->pseudo ?></a></td>
                             <td><?= $user->score?></td>
                         </tr>
                     <?php endforeach; ?>
