@@ -31,7 +31,7 @@
 1 SorbetCitron
  - Quel est le nom du tout premier projet du tronc commun de 42 ?
 1 libft
- - Combien de projets devez vous réaliser pour finir le tronc commun (1 module C++ = 1 projet, de même pour les examens) ?
+ - Combien de projets devez vous réaliser pour finir le tronc commun (1 module C++ = 1 projet, de mme pour les examens) ?
 1 21
  - Quel est le projet qui consiste à recréer un interpréteur de commandes Unix en C ?
 0 UnixShell
@@ -69,11 +69,11 @@
 0 118
 1 54
  - Quel "titre" de l'intra debloque-t-on quand on atteinds le niveau 25 ?
-0 Knight
-0 Jedi
-0 Boss
-1 The Answer
-0 Master
+0 I Am The Knight
+0 I Am The Jedi
+0 I Am The Boss
+1 I Am The Answer
+0 I Am The Master
  - Qui sont les tuteurs de cette piscine ?
 1 Lorenzo
 0 Dan

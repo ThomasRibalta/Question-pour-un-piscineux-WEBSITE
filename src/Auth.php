@@ -51,9 +51,10 @@ class Auth {
         if ($score == -1)
         {
             $query = $this->pdo->prepare('UPDATE users SET score = :score WHERE id = :id');
-            $query->execute(['id' => $id,
-                    'score' => $score
-                ]);
+            $query->execute([
+                'id' => $id,
+                'score' => $score
+            ]);
         }
         else
         {

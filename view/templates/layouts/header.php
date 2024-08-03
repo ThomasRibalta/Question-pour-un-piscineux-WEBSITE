@@ -28,14 +28,17 @@
 </head>
     <nav class="navbar navbar-expand-lg navbar-dark header">
         <?php if (isset($_SESSION['user_details']['id'])) :?> 
-          <a class="navbar-brand ml-5" href="https://profile.intra.42.fr/users/<?php echo $userDetails->pseudo?>">
+        <a class="navbar-brand ml-5" href="https://profile.intra.42.fr/users/<?php echo $userDetails->pseudo?>">
             <div class="profile-picture"></div>
-          </a>
+        </a>
         <?php endif ?>
         <a class="navbar-brand" href="#">
             <img src="assets/42logo.png" alt="Logo 42">
         </a>
-        <div class="navbar-collapse mr-5">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="/classement">Classement</a>
