@@ -49,7 +49,10 @@ if (!isset($_GET['code'])) {
 
         $pdo = DBManager::pdoConnexion();
         $auth = new Auth($pdo);
-        $auth->registerUser($userDetails['id'], $userDetails['login'], $userDetails['image']['link'], $coalitionDetails[0]['name'], -1);
+        if (!isset($coalitionDetails[1]))
+            $auth->registerUser($userDetails['id'], $userDetails['login'], $userDetails['image']['link'], $coalitionDetails[0]['name'], -1);
+        else
+            $auth->registerUser($userDetails['id'], $userDetails['login'], $userDetails['image']['link'], $coalitionDetails[1]['name'], -1);
 
         header('Location: /start');
         exit;
