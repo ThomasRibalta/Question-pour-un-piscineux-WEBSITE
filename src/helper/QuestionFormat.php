@@ -18,12 +18,15 @@ class QuestionFormat
     {
       for ($i = 0; $i < count($this->responses); $i++)
       {
-        echo '<div class="form-check">';
-        echo '<input class="form-check-input" type="radio" name="reponse" id="reponse' . $i . '" value="'. $i .'">';
-        echo '<label class="form-check-label" for="reponse' . $i . '">';
-        echo $this->responses[$i]->reponse;
-        echo '</label>';
-        echo '</div>';
+        if (trim($this->responses[$i]->reponse) !== "null")
+        {
+          echo '<div class="form-check">';
+          echo '<input class="form-check-input" type="radio" name="reponse" id="reponse' . $i . '" value="'. $i .'">';
+          echo '<label class="form-check-label" for="reponse' . $i . '">';
+          echo $this->responses[$i]->reponse;
+          echo '</label>';
+          echo '</div>';
+        }
       }
     }
 
@@ -31,12 +34,15 @@ class QuestionFormat
     {
       for ($i = 0; $i < count($this->responses); $i++)
       {
-        echo '<div class="form-check">';
-        echo '<input class="form-check-input" type="checkbox" name="reponse[]" id="reponse' . $i . '" value="'. $i .'">';
-        echo '<label class="form-check-label" for="reponse' . $i . '">';
-        echo $this->responses[$i]->reponse;
-        echo '</label>';
-        echo '</div>';
+        if (trim($this->responses[$i]->reponse) !== "null")
+        {
+          echo '<div class="form-check">';
+          echo '<input class="form-check-input" type="checkbox" name="reponse[]" id="reponse' . $i . '" value="'. $i .'">';
+          echo '<label class="form-check-label" for="reponse' . $i . '">';
+          echo $this->responses[$i]->reponse;
+          echo '</label>';
+          echo '</div>';
+        }
       }
     }
 
