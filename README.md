@@ -21,16 +21,7 @@ This project has been an invaluable learning experience, giving me hands-on know
 
 ### WebSite MCD
 
-#####+-----------+                    +-----------------+                          1 
-|   users   |                    |    question     |                    +-------------+
-+-----------+                    +-----------------+                    |   reponse   |
-| id (PK)   |                    | id (PK)         |                    +-------------+
-| pseudo    |                    | question        |                    | id_question |----> question.id
-| img_url   |                    | value           |                    | reponse     |
-| coalition |                    +-----------------+                    | correcte    |
-| score     |                                                           +-------------+
-+-----------+
-
+<img alt="mcd" src="https://www.noelshack.com/2024-32-1-1722877718-screenshot-2024-08-05-at-19-08-20.png">
 
 ### WebSite stats
 ...
