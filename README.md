@@ -23,5 +23,9 @@ This project has been an invaluable learning experience, giving me hands-on know
 
 <img alt="mcd" src="https://image.noelshack.com/fichiers/2024/32/1/1722877718-screenshot-2024-08-05-at-19-08-20.png" />
 
-### WebSite stats
-...
+### WebSite IMG
+<p align="center">
+  <img src="https://image.noelshack.com/fichiers/2024/32/3/1723064426-screenshot-2024-08-07-at-21-34-07.png" width="500" />
+  <img src="https://image.noelshack.com/fichiers/2024/32/3/1723064423-screenshot-2024-08-07-at-21-34-18.png" width="500" />
+  <img src="https://image.noelshack.com/fichiers/2024/32/3/1723064423-screenshot-2024-08-07-at-21-34-40.png" width="500" />
+</p>
